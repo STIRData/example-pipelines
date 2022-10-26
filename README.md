@@ -1,2 +1,2 @@
-# example-pipelines
-This repository contains examples of LinkedPipes ETL pipelines illustrating working with STIRData compliant data.
+# STIRData example LinkedPipes ETL pipelines
+This repository contains examples of [LinkedPipes ETL](https://etl.linkedpipes.com) pipelines illustrating working with [STIRData compliant](https://stirdata.github.io/data-specification/) data.

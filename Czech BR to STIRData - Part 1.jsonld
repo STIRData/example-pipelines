@@ -1,0 +1,175 @@
+[ {
+  "@graph" : [ {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770",
+    "@type" : [ "http://linkedpipes.com/ontology/Pipeline" ],
+    "http://etl.linkedpipes.com/ontology/version" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#int",
+      "@value" : "2"
+    } ],
+    "http://linkedpipes.com/ontology/profile" : [ {
+      "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/2"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Czech BR to STIRData - Part 1"
+    } ]
+  }, {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/17",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/48"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "527"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "183"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Transform from source RDF shape\nto STIRData specification"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "SPARQL construct"
+    } ]
+  }, {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/18",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/52"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "260"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "179"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Load RDF into memory"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Files to RDF single graph"
+    } ]
+  }, {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/2",
+    "@type" : [ "http://linkedpipes.com/ontology/ExecutionProfile" ],
+    "http://linkedpipes.com/ontology/rdfRepositoryPolicy" : [ {
+      "@id" : "http://linkedpipes.com/ontology/repository/PerInputRepository"
+    } ],
+    "http://linkedpipes.com/ontology/rdfRepositoryType" : [ {
+      "@id" : "http://linkedpipes.com/ontology/repository/NativeStore"
+    } ]
+  }, {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/23",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "OutputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/18"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputRdf"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/17"
+    } ]
+  }, {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/29",
+    "@type" : [ "http://linkedpipes.com/ontology/Connection" ],
+    "http://linkedpipes.com/ontology/sourceBinding" : [ {
+      "@value" : "FilesOutput"
+    } ],
+    "http://linkedpipes.com/ontology/sourceComponent" : [ {
+      "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/8"
+    } ],
+    "http://linkedpipes.com/ontology/targetBinding" : [ {
+      "@value" : "InputFiles"
+    } ],
+    "http://linkedpipes.com/ontology/targetComponent" : [ {
+      "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/18"
+    } ]
+  }, {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/8",
+    "@type" : [ "http://linkedpipes.com/ontology/Component" ],
+    "http://linkedpipes.com/ontology/configurationGraph" : [ {
+      "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/47"
+    } ],
+    "http://linkedpipes.com/ontology/template" : [ {
+      "@id" : "http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0"
+    } ],
+    "http://linkedpipes.com/ontology/x" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "-63"
+    } ],
+    "http://linkedpipes.com/ontology/y" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "181"
+    } ],
+    "http://purl.org/dc/terms/description" : [ {
+      "@value" : "Access source RDF TriG dump\nin local file system"
+    } ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+      "@value" : "Files from local"
+    } ]
+  } ],
+  "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770"
+}, {
+  "@graph" : [ {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/47",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path" : [ {
+      "@value" : "/data/www/soubor/or.trig"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/47"
+}, {
+  "@graph" : [ {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/48",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query" : [ {
+      "@value" : "PREFIX m8g: <http://data.europa.eu/m8g/>\nPREFIX locn: <http://www.w3.org/ns/locn#>\nPREFIX legal: <http://www.w3.org/ns/legal#>\nPREFIX adms: <http://www.w3.org/ns/adms#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX org: <http://www.w3.org/ns/org#>\nPREFIX schema: <https://schema.org/>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n\nPREFIX vr: <https://slovník.gov.cz/legislativní/sbírka/304/2013/pojem/>\nPREFIX ok: <https://slovník.gov.cz/legislativní/sbírka/90/2012/pojem/>\nPREFIX oz: <https://slovník.gov.cz/legislativní/sbírka/89/2012/pojem/>\nPREFIX zr: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/>\nPREFIX or: <https://slovník.gov.cz/datový/obchodní-rejstřík/pojem/>\n\nCONSTRUCT { \n  ?osoba a legal:LegalEntity ;\n    legal:legalName ?název ;\n    legal:legalIdentifier ?reg ;\n    legal:companyType ?forma_mezinárodní ;\n    schema:foundingDate ?datum_zapsání ;\n    schema:dissolutionDate ?výmaz ;\n    org:hasSite ?sídlo ; # agreed upon redundancy\n    org:hasRegisteredSite ?sídlo ;\n    legal:registeredAddress ?adresa_sídla .\n\n  ?sídlo a org:Site ;\n    org:siteAddress ?adresa_sídla .\n\n  ?adresa_sídla a locn:Address ;\n    locn:addressArea ?část_obce ;\n    locn:postCode ?psč ;\n    locn:thoroughfare ?název_ulice ;\n    locn:locatorDesignator ?číslo_popisné, ?číslo_orientační ;\n    locn:postName ?název_obce ;\n    locn:adminUnitL1 ?název_státu ;\n    locn:adminUnitL2 ?název_okresu ;\n    m8g:adminUnit ?country .\n\n  ?country a m8g:AdminUnit ;\n    m8g:code ?country ;\n    m8g:level <https://w3id.org/stirdata/resource/adminLevel/Country> .\n\n  ?reg a adms:Identifier ;\n    skos:notation ?ičo .\n\n}\nWHERE { \n  ?osoba vr:má-právní-formu-právnické-osoby ?forma_or ;\n         vr:identifikační-číslo-osoby ?ičo ;\n         ok:firma-obchodní-korporace ?název ;\n         vr:má-sídlo-zapsané-osoby ?sídlo ;\n         schema:validFrom ?datum_zapsání .\n  ?sídlo oz:má-adresu ?adresa_sídla .\n  OPTIONAL {\n    ?osoba schema:validThrough ?výmaz .\n  }\n  OPTIONAL {\n    ?adresa_sídla zr:má-název-části-obce ?část_obce .\n  }\n  OPTIONAL {\n    ?adresa_sídla zr:má-název-ulice ?název_ulice .\n  }\n  OPTIONAL {\n    ?adresa_sídla or:má-poštovní-směrovací-číslo ?psč .\n  }\n  OPTIONAL {\n    ?adresa_sídla zr:číslo-popisné ?číslo_popisné .\n  }\n  OPTIONAL {\n    ?adresa_sídla zr:číslo-orientační ?číslo_orientační .\n  }\n  OPTIONAL {\n    ?adresa_sídla zr:má-název-obce-nebo-vojenského-újezdu ?název_obce .\n  }\n  OPTIONAL {\n    ?adresa_sídla or:má-název-státu ?název_státu .\n    OPTIONAL {\n      VALUES (?název_státu ?country ) {\n        (\"Česká republika\"@cs <http://publications.europa.eu/resource/authority/country/CZE>) \n        (\"Česká republika - neztotožněno\"@cs <http://publications.europa.eu/resource/authority/country/CZE>)\n        (\"Spolková republika Německo\"@cs <http://publications.europa.eu/resource/authority/country/DEU>)\n      }\n    }\n  }\n  OPTIONAL {\n    ?adresa_sídla zr:má-název-okresu ?název_okresu .\n  }\n\n  OPTIONAL {\n    VALUES (?forma_mezinárodní ?forma_or) {\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/G2I3> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/pobocny_spolek>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/CATU> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/spolek>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/Q25I> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/odbor_organizace>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/9HLU> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/sro>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/9RVC> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/dr>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/QS6A> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/nad_f>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/5KU5> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/vos>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/IQ9O> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/svj>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/3G3D> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/nad>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/ZQO8> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/evr_spol>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/747U> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/ks>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/MBUU> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/prisp>) #!! \"zřízená územním samosprávním celkem\"\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/6CQN> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/as>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/VIE3> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/n_zaj_sdr_po>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/QJ0F> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/ustav>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/Q25I> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/org_zam>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/RBGQ> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/evr_hzs>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/CZUA> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/zahr_fos>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/LPCQ> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/m_odbor_org>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/T1FT> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/evr_dr_spol>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/VQU7> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/os_z_nad>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/WUFK> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/oz>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/VQU7> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/os_z_nad_f>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/P3YF> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/p_odbor_org>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/Q25I> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/odbor_org>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/BL4B> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/ops>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/7OZQ> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/zaj_sdr>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/95G8> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/fo>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/VIE3> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/zaj_sdr_po>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/TNBA> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/os_zpo>)\n      #    (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/ostatni>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/PQJE> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/nevlad_org>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/9XDB> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/os>)\n      (<https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/GLEIF/CZ/U95A> <https://obchodní-rejstřík.stirdata.opendata.cz/zdroj/číselník/obchodní-rejstřík/právní-formy/položka/os_zfo>)\n    }\n  }\n\n  BIND(IRI(CONCAT(STR(?osoba), \"/registrace\")) AS ?reg)\n}\n\n\n\n\n"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/48"
+}, {
+  "@graph" : [ {
+    "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/52",
+    "@type" : [ "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration" ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "50000"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType" : [ {
+      "@value" : ""
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail" : [ {
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+      "@value" : "false"
+    } ],
+    "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl" : [ {
+      "@id" : "http://plugins.linkedpipes.com/resource/configuration/None"
+    } ]
+  } ],
+  "@id" : "https://stirdata.opendata.cz/etl/resources/pipelines/1666685863770/52"
+} ]
